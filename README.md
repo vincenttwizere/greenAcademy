@@ -10,17 +10,6 @@ Inyungu Green Academy (IGA) is a single-page website built using **HTML**, **CSS
 
 ---
 
-## Background
-
-Inyungu Green Academy (IGA) is committed to advancing Rwanda’s Vision 2050 of becoming a knowledge-based, high-income nation through sustainable economic growth and environmental consciousness. Aligned with Rwanda’s National Strategy for Transformation (NST1 & NST2), IGA focuses on entrepreneurship development, financial inclusion, and green growth to support the country’s strategic goals. By equipping Rwandan entrepreneurs with financial, digital, and green business skills, IGA aims to foster innovation and drive sustainable economic transformation.
-
-
-## Motto
-
-“Innovating for a Sustainable Future.”
-
----
-
 
 ## Technology Stack
 
