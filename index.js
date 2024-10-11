@@ -32,3 +32,13 @@ function startSlider() {
 
 // Initialize slider
 startSlider();
+
+
+const toggleButtons = document.querySelectorAll('.toggle-content');
+
+toggleButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    content.classList.toggle('show');
+  });
+});
