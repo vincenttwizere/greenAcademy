@@ -42,3 +42,20 @@ toggleButtons.forEach((button) => {
     content.classList.toggle('show');
   });
 });
+
+// linking navbar to other pages
+
+
+function toggleNav() {
+  const navLinksMobile = document.getElementById('mobile-menu');
+  const navToggle = document.querySelector('.nav-toggle');
+  const closeIcon = document.querySelector('.close-icon');
+
+  // Toggle visibility of mobile nav and icons
+  navLinksMobile.classList.toggle('hidden');
+  navToggle.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
+}
+
+// Add this script tag to your HTML before the closing </body> tag:
+// <script src="script.js"></script>
