@@ -22,11 +22,15 @@
 
 <body>
   <nav class="nav">
-    <div class="nav-logo">
+    <!-- <div class="nav-logo">
         <a href="#">
             <img src="./Assets/logo.png" alt="Logo">
         </a>
+    </div> -->
+    <div class="logo">
+      <h1>My Logo</h1>
     </div>
+    
     <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -66,21 +70,20 @@
   
     </div>
   </div>
-  
-  <!-- about section -->
   <section id="about">
-    <br>
-    <br>
-    <h2>About Us</h2>
+    <h2 class="about-h2">About Us</h2>
     <div id="about-content">
-      
         <p>Inyungu Green Academy (IGA) is committed to advancing Rwanda’s Vision 2050 of becoming a knowledge-based,
-          high-income nation through sustainable economic growth and environmental consciousness. Aligned with Rwanda’s
-          National Strategy for Transformation (NST1 & NST2), IGA focuses on entrepreneurship development, financial
-          inclusion, and green growth to support the country’s strategic goals. By equipping Rwandan entreprpreneurs
-          with financial, digital, and green business skills, IGA aims to foster innovation and drive sustainable
-          economic transformation.</p>
-      </div>
+            high-income nation through sustainable economic growth and environmental consciousness. Aligned with Rwanda’s
+            National Strategy for Transformation (NST1 & NST2), IGA focuses on entrepreneurship development, financial
+            inclusion, and green growth to support the country’s strategic goals. By equipping Rwandan entrepreneurs
+            with financial, digital, and green business skills, IGA aims to foster innovation and drive sustainable
+            economic transformation.</p>
+    </div>
+</section>
+
+  
+      
       
   </section> 
 <!-- Mission, Vision & Objectives -->
@@ -114,9 +117,9 @@
 
 
 <!-- Combined Activities, Beneficiaries, and Outcomes Section -->
-<section id="activities-beneficiaries" class="py-10 bg-gray-100">
+<section id="activities-beneficiaries" class="py-10 bg-black-100">
   <div class="text-center mb-6">
-      <h2 class="text-2xl font-bold">Key Activities, Target Beneficiaries & Expected Outcomes</h2>
+      <h2 class="text-2xl font-bold">Services</h2>
   </div>
   <div class="activity-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
 
@@ -177,37 +180,37 @@
       
   </div>
 </section>
+<!-- contact -->
+<section id="contact" class="py-10 bg-red-100">
+  <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start">
+          <!-- Left Side: Contact Information -->
+          <div class="mb-6 md:mb-0 md:w-1/2">
+              <h2 class="text-2xl font-bold mb-4">Have a Question? Just Ask</h2>
+              <p class="text-sm text-gray-600 mb-4 text-justify">
+                  Feel free to reach out to us with any inquiries or for more information about our services. 
+                  We're here to assist you and provide the support you need to address your unique challenges.
+              </p>
+          </div>
 
-  <!-- outcomes -->
-
-
-  <section id="join">
-    <h2>Join Us in Innovating for a Sustainable Future</h2>
-    <p>Help us foster growth and build Rwanda’s green entrepreneurial ecosystem!</p>
-    <button>Join Now</button>
-  </section>
-  <!-- contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div>
-
-  </section>
-
-
-  <footer>
-    <p id="motto">Motto: <em>“Innovating for a Sustainable Future.”</em></p>
-
-    <hr>
-
-    <p>&copy; 2024 Inyungu Green Academy</p>
-    </div>
+          <!-- Right Side: Address Card -->
+          <div class="md:w-1/3"> <!-- Reduced card width -->
+              <div class="address-card bg-white p-4 rounded-lg shadow-md border border-gray-300">
+                  <h3 class="text-lg font-semibold mb-2">Contact Information</h3>
+                  <p class="text-sm text-gray-700">Address: Kigali, KG 11 Ave</p>
+                  <p class="text-sm text-gray-700">Email: info@seduloconsult.rw</p>
+                  <p class="text-sm text-gray-700">Phone: +250 789 361 905</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+  <footer class="bg-gray-200 py-6 text-center">
+   
+    <p class="text-sm text-gray-600">&copy; 2024 Inyungu Green Academy. All Rights Reserved.</p>
   </footer>
+  
 
   <script src="index.js"></script>
 </body>

@@ -1,5 +1,3 @@
-/* styles.css
-
 /* Reset basic styling */
 * {
     margin: 0;
@@ -22,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     color: white;
     position: fixed;
     width: 100%;
@@ -36,6 +34,18 @@ body {
     font-weight: bold;
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -44,12 +54,7 @@ body {
 .nav-links li {
     list-style: none;
     margin-right: 20px;
-    position: relative; 
-
-}
-
-.nav-links li::before {
-    content: none;
+    position: relative;
 }
 
 .nav-links a {
@@ -57,7 +62,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
-
 }
 
 .nav-links a:hover {
@@ -68,7 +72,6 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    
 }
 
 .nav-toggle span {
@@ -84,7 +87,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .hero-slide {
@@ -123,20 +126,29 @@ body {
     margin-bottom: 1.5rem;
 }
 
-
-
 /* About us section */
-#about-content{
-    background-color: red;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 100%;
-    max-width: 800px;
+
+
+/* Paragraph Styles */
+#about-content p {
+    font-size: 0.875rem; /* Font size */
+    color: #4a5568; /* Text color */
+    line-height: 1.5; /* Line height */
+    text-align: justify; /* Justified text */
+    max-width: 800px; /* Maximum width */
+    align-items: center;
     margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: justify;
+    background-color: red;
+}
+
+.about-h2 {
+    color: black;
+}
+/* Responsive Styles */
+@media (min-width: 768px) {
+  #about-content {
+    margin: 2.5em 5%; /* More margin on larger screens */
+  }
 }
 
 .mission-vision {
@@ -144,25 +156,19 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .mission-vision h3 {
-    margin-top: 0;
-    color: hsl(211, 100%, 50%);
-  }
-  
-  .content {
+}
+
+.content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-  }
-  
-  .mission, .vision, .objective {
+}
+
+.mission, .vision, .objective {
     width: 45%;
     padding: 20px;
     border: 1px solid #ddd;
@@ -170,63 +176,65 @@ body {
     background-color: #f7f7f7;
     margin: 10px 0;
     text-align: justify;
-  }
-  
-  .mission h4, .vision h4, .objective h4 {
+}
+
+.mission h4, .vision h4, .objective h4 {
     margin-top: 0;
-    color: hsl(211, 100%, 50%);
+    color: black;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
-  .objective{
-    width: 300px;            /* Set a fixed width for the card */
-    margin: 20px auto;       /* Horizontally centers the card */
+.objective {
+    width: 300px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+}
 
 .mission p, .vision p, .objective p {
-  font-size: 14px;
-  color: #666;
+    font-size: 14px;
+    color: #666;
 }
 
-/* Responsive styles */
+/* styles of key activities */
 
-@media (max-width: 768px) {
-  .content {
+#activities-beneficiaries {
+    display: flex;
     flex-direction: column;
-  }
-  .mission, .vision, .objective {
-    width: 100%;
-    margin: 20px 0;
-  }
+    align-items: center;      /* Center the entire section including the heading */
+    padding: 20px;
 }
 
-@media (max-width: 480px) {
-  .background, .mission-vision {
-    padding: 10px;
-  }
-  .mission, .vision {
-    padding: 10px;
-  }
-  .mission h4, .vision h4 {
-    font-size: 16px;
-  }
-  .mission p, .vision p {
-    font-size: 12px;
-  }
+.activity-container {
+    width: 100%;
+    max-width: 800px;         /* Set the maximum width to 800px */
+    margin: 0 auto;
+    gap: 20px;
 }
+
+.activity-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#activities-beneficiaries h2 {
+    text-align: center;       /* Center the heading text */
+    font-size: 2rem;
+    margin-bottom: 20px;  
+    color: black;
+}
+
 
 /* Active slide styling */
 .hero-slide.active {
     opacity: 1;
 }
-
 
 /* Styles for the remaining sections */
 section {
@@ -263,147 +271,45 @@ section ul li::before {
     margin-right: 5px;
 }
 
- .section #join {
-    background-color: #333;
-    color: #fff;
-    padding: 2em;
-}
 
-section #join h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-section #join p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
-
-#join button {
-    padding: 0.75em 2em;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-
-/* Contact Section */
-section#contact {
-    background-color: #f5f5f5;
-    padding: 3em 1.5em; 
-    
-}
-
-section#contact h2 {
-    font-size: 2.5em; 
-    margin-bottom: 1em; 
-    text-align: center;
-  
-}
-
-section#contact form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em; 
-    max-width: 590px; 
-    margin: 0 auto; 
-}
-
-section#contact form input[type="text"],
-section#contact form input[type="email"],
-section#contact form textarea {
-    padding: 0.75em; 
-    margin-right: 0; 
-    flex: 1 1 100%; 
-    max-width: 100%; 
-    border: 1px solid #ccc;
-    border-radius: 10px; 
-    font-size: 1.1em;
-    outline: none; /* Remove default outline */
-    transition: border-color 0.3s ease; 
-}
-
-section#contact form input[type="text"]:focus,
-section#contact form input[type="email"]:focus,
-section#contact form textarea:focus {
-    border-color: #005C5C; 
-}
-
-section#contact form textarea {
-    resize: vertical; 
-    height: 150px; 
-}
-
-section#contact form button[type="submit"] {
-    padding: 0.75em 2em; 
-    background-color: #007BFF; 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease, transform 0.2s ease; 
-}
-
-section#contact form button[type="submit"]:hover {
-    background-color: #007BFF; /* Darker green on hover */
-}
-
-section#contact form button[type="submit"]:active {
-    transform: scale(0.98); 
-}
-
-section#contact div {
-    text-align: center;
-    margin-top: 2em; 
-}
-
-section#contact p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: black;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    section#contact form {
-        flex-direction: column; 
-    }
-
-    section#contact form input[type="text"],
-    section#contact form input[type="email"],
-    section#contact form textarea {
-        margin: 0 0 1em 0; 
-        flex: 1 1 100%;
-    }
-}
-
-
+/* Footer styling */
 footer {
-    background-color:#001b3f;
-    color: #fff;
-    padding: 1em;
+    background-color: #f7fafc; 
+    padding: 2rem 0; 
     text-align: center;
-    display: inline-block;
-    padding-bottom: 20px;
+  }
+  
+ 
+  footer p {
+    margin: 0; 
+    color: #718096; 
+  }
+  
+  footer p.text-sm {
+    font-size: 0.875rem; 
+  }
+  
 
-}
-
-footer p {
-    font-size: 1em;
-    margin-top: 1em;
-}
-
-#motto {
-    text-align: left;
-}
-/* Media queries for responsiveness */
+/* Media Queries */
 @media (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .mission, .vision, .objective {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    section#contact form {
+        flex-direction: column;
+    }
+
     .nav-links {
         display: none;
     }
@@ -415,43 +321,35 @@ footer p {
     .nav-links.active {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width: 100vw; 
-        height: 100vh; 
-        background-color: rgba(51, 51, 51, 0.8); 
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(51, 51, 51, 0.8);
         padding: 1rem;
-        border-radius: 0; 
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         z-index: 1;
-      
     }
 
-    /* Optional: Add transition for smooth appearance */
-    .nav-links.active {
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(0);
-    }
-
-    /* Improve hero content font sizes for small screens */
     .hero-content h1 {
-        font-size: 1.75rem; 
-        line-height: 1.3;
-        text-align: center; 
+        font-size: 1.75rem;
+        text-align: center;
     }
 
     .hero-content p {
-        font-size: 0.95rem; 
-        line-height: 1.4;
-        text-align: center; 
+        font-size: 0.95rem;
+        text-align: center;
     }
 }
 
-
 @media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+        padding: 6px;
+    }
+
     .hero-content h1 {
         font-size: 1.5rem;
     }
@@ -464,88 +362,12 @@ footer p {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
-} 
-/* styles for fun */
-
-
-.d-flex {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-
-.d-flex span {
-    font-size: 16px; 
-    color: #333; 
-    line-height: 1.5; 
-   
-
-    flex: 1; 
-    text-align: center; 
-}
-
-/* Optional: Additional styles */
-h2 {
-    color: hsl(211, 100%, 50%); 
-    text-transform: uppercase;
-}
-
-.text-success {
-    color: #28a745; 
-}
-
-/* additional styles */
-
-#beneficiaries, #outcomes {
-  margin: 50px;
-  padding-left: 50px; 
-  padding-right: 50px; 
-  padding-top: 50px; 
-  padding-bottom: 50px; 
-  background-color: #f8f9fa;
-}
-
-#beneficiaries .container, #outcomes .container {
-  padding: 20px 40px; 
-}
-
-#beneficiaries .d-flex, #outcomes .d-flex {
-  margin-bottom: 10px; 
-  margin-left: 200px; 
-  padding-left: auto;
-}
-
-#beneficiaries i, #outcomes i {
-  margin-right: 0; 
-  padding-left: 20px;
-  
-
-}
-
-/* hjf */
-
-.activity-container {
-    max-width: 800px; /* Set maximum width for the main container */
-    margin: 0 auto; /* Center the container */
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(1, 1fr); /* Default for small screens */
-    gap: 1rem; /* Space between items */
-    padding-left: 1rem; /* Adjust padding for better alignment */
-    padding-right: 1rem; /* Adjust padding for better alignment */
-}
-
-.activity-card {
-    width: 100%; /* Allow cards to take full width of the grid cell */
 }
 
 @media (min-width: 768px) {
-    .activity-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    #about {
+      margin: 2.5em 5%;
     }
-}
+  }
 
-@media (min-width: 1024px) {
-    .activity-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
-    }
-}
+  
