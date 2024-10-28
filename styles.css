@@ -1,4 +1,5 @@
 /* Reset basic styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -131,14 +132,13 @@ body {
 
 /* Paragraph Styles */
 #about-content p {
-    font-size: 0.875rem; /* Font size */
-    color: #4a5568; /* Text color */
-    line-height: 1.5; /* Line height */
-    text-align: justify; /* Justified text */
-    max-width: 800px; /* Maximum width */
+    font-size: 0.875rem;
+    color: #4a5568;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 800px; 
     align-items: center;
     margin: 0 auto;
-    background-color: red;
 }
 
 .about-h2 {
@@ -147,7 +147,7 @@ body {
 /* Responsive Styles */
 @media (min-width: 768px) {
   #about-content {
-    margin: 2.5em 5%; /* More margin on larger screens */
+    margin: 2.5em 5%;
   }
 }
 
@@ -205,13 +205,13 @@ body {
 #activities-beneficiaries {
     display: flex;
     flex-direction: column;
-    align-items: center;      /* Center the entire section including the heading */
+    align-items: center;
     padding: 20px;
 }
 
 .activity-container {
     width: 100%;
-    max-width: 800px;         /* Set the maximum width to 800px */
+    max-width: 800px;
     margin: 0 auto;
     gap: 20px;
 }
@@ -224,7 +224,7 @@ body {
 }
 
 #activities-beneficiaries h2 {
-    text-align: center;       /* Center the heading text */
+    text-align: center; 
     font-size: 2rem;
     margin-bottom: 20px;  
     color: black;
@@ -370,4 +370,7 @@ footer {
     }
   }
 
+
+  /* additional nav styles */
+  
   
