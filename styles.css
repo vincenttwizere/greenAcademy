@@ -1,5 +1,4 @@
 /* Reset basic styling */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     background-color: whitesmoke;
     color: white;
     position: fixed;
@@ -28,23 +27,6 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-}
-
-.nav-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 .nav-links {
@@ -82,13 +64,12 @@ body {
     margin: 3px 0;
 }
 
-/* Hero slider styling */
+
 .hero-slider {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin-top: 40px;
 }
 
 .hero-slide {
@@ -99,6 +80,10 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
 }
 
 .hero-slide img {
@@ -115,20 +100,30 @@ body {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+/* About Us section */
+#about {
+    padding: 10px 20px;
+    text-align: center;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+.about-h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
 }
 
-/* About us section */
-
+#about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
 
 /* Paragraph Styles */
 #about-content p {
@@ -136,26 +131,27 @@ body {
     color: #4a5568;
     line-height: 1.5;
     text-align: justify;
-    max-width: 800px; 
+    max-width: 800px;
     align-items: center;
     margin: 0 auto;
 }
 
-.about-h2 {
-    color: black;
-}
-/* Responsive Styles */
-@media (min-width: 768px) {
-  #about-content {
-    margin: 2.5em 5%;
-  }
+/* Additional styling for logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
 }
 
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* Mission, Vision, Objective */
 .mission-vision {
-    background-color: blue;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -168,7 +164,7 @@ body {
     gap: 20px;
 }
 
-.mission, .vision, .objective {
+.mission, .vision, .objective{
     width: 45%;
     padding: 20px;
     border: 1px solid #ddd;
@@ -181,8 +177,6 @@ body {
 .mission h4, .vision h4, .objective h4 {
     margin-top: 0;
     color: black;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -200,8 +194,7 @@ body {
     color: #666;
 }
 
-/* styles of key activities */
-
+/* Key Activities Section */
 #activities-beneficiaries {
     display: flex;
     flex-direction: column;
@@ -214,110 +207,53 @@ body {
     max-width: 800px;
     margin: 0 auto;
     gap: 20px;
+
 }
 
 .activity-card {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-}
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+} 
 
 #activities-beneficiaries h2 {
-    text-align: center; 
-    font-size: 2rem;
-    margin-bottom: 20px;  
-    color: black;
-}
-
-
-/* Active slide styling */
-.hero-slide.active {
-    opacity: 1;
-}
-
-/* Styles for the remaining sections */
-section {
-    padding: 2em;
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
 }
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-section p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
-
-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section ul li {
-    margin: 0 10px;
-}
-
-section ul li::before {
-    content: "\2022";
-    margin-right: 5px;
-}
-
 
 /* Footer styling */
 footer {
-    background-color: #f7fafc; 
-    padding: 2rem 0; 
+    background-color: #f7fafc;
+    padding: 2rem 0;
     text-align: center;
-  }
-  
- 
-  footer p {
-    margin: 0; 
-    color: #718096; 
-  }
-  
-  footer p.text-sm {
-    font-size: 0.875rem; 
-  }
-  
+}
 
-/* Media Queries */
+footer p {
+    margin: 0;
+    color: #718096;
+}
+
+footer p.text-sm {
+    font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+
+/* Navbar */
 @media (max-width: 768px) {
     .logo {
         font-size: 20px;
         padding: 8px;
     }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .mission, .vision, .objective {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    section#contact form {
-        flex-direction: column;
-    }
-
     .nav-links {
         display: none;
     }
-
     .nav-toggle {
         display: flex;
     }
-
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -332,16 +268,6 @@ footer {
         padding: 1rem;
         z-index: 1;
     }
-
-    .hero-content h1 {
-        font-size: 1.75rem;
-        text-align: center;
-    }
-
-    .hero-content p {
-        font-size: 0.95rem;
-        text-align: center;
-    }
 }
 
 @media (max-width: 480px) {
@@ -349,28 +275,72 @@ footer {
         font-size: 18px;
         padding: 6px;
     }
+}
 
+/* Hero Slider */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
     .hero-content h1 {
         font-size: 1.5rem;
     }
-
     .hero-content p {
         font-size: 0.9rem;
     }
-
     .hero-content button {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
 }
 
+/* About Section */
 @media (min-width: 768px) {
     #about {
-      margin: 2.5em 5%;
+        margin: 2.5em 5%;
     }
-  }
+}
 
+@media (max-width: 768px) {
+    .about-h2 {
+        font-size: 2rem;
+    }
+    #about-content {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
 
-  /* additional nav styles */
-  
-  
+@media (max-width: 480px) {
+    .about-h2 {
+        font-size: 1.75rem;
+    }
+    #about-content {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Mission, Vision, Objective */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .mission, .vision, .objective {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* other styles */
+
+/* Hero slider styling */
+
